@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place To Visit</title>
+    <style></style>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .place1 {
+        background-color: aqua;
+        height: 400px;
+        width: 800px;
+      }
+      .travocontent{
+        /* border: 2px solid red; */
+        width: 500px;
+        margin-left: 300px;
+        margin-top: -250px;
+      }
+      .travoicon{
+        height: 60PX;
+        /* border: 2px solid red; */
+        /*  align elements in single line*/
+        display: flex;
+        /* Apply space between the element */
+        justify-content: space-around;
+        /* align to the center */
+        align-items: center;
+
+      }
+      .myselect{
+        border: 2px solid black;
+        height: 55px;
+        width: 55px;
+        color: brown;
+        border-radius: 100%;
+        /* increase the size of the element */
+        font-size: xx-large;
+       padding-top: 21px;
+       padding-left: 25px;
+      }
+      .booknow{
+        height: 35px;
+        width: 120px;
+        background-color: orange;
+        margin: 25px;
+        border-radius: 28px;
+
+      }
+      .booknow:hover{
+        background-color: rgb(168, 174, 158) ;
+
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="background-color: black; color: antiquewhite; text-align: center"
+    >
+      PLACE TO VISIT
+    </h1>
+    <section class="place1">
+      <a href="https://www.tajhotels.com/" target="_blank">
+        <img
+          src="./images/tajhotel1.jpg"
+          alt="place1"
+          height="300px"
+          width="300px"
+      /></a>
+      <article class="travocontent">
+        <h1 style="text-align: center;">
+          <a href="https://goo.gl/maps/DswGmPvCLhfAij8k6" target="_blank"
+            >TAJ HOTEL</a
+          >
+        </h1>
+        <details style="margin-left: 100px;">
+          Packages
+          <ul>
+            <li>1 Week</li>
+            <li>Travo Guide</li>
+            <li>Food and Resort Stay</li>
+          </ul>
+        </details>
+        <div class="travoicon">
+          <!-- div*4.myselect -->
+          <div class="myselect">
+            <i class="fa-sharp fa-solid fa-plane-departure"></i>
+          </div>
+          <div class="myselect"><i class="fa-solid fa-hotel"></i></div>
+          <div class="myselect"><i class="fa-solid fa-phone"></i></div>
+          <div class="myselect"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <button class="booknow"><a href="#"><b> Book Now</b></a></button>
+      </article>
+    </section>
+  </body>
+</html>
