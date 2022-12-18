@@ -1,19 +1,2 @@
 
-public class C35 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.facebook.com/signup");
-		WebElement allmonths = driver.findElement(By.id("month"));
-		Select s=new Select(allmonths);
-		WebElement element = s.getFirstSelectedOption();
-		System.out.println(element.getText());
-
-	}
-
-}
+BYYYYYYYYYYYYYYYY
